@@ -46,20 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
+    <Compile Include="Socket\Client.cs" />
     <Compile Include="CONST.cs" />
-    <Compile Include="CreateDirectoryDialog.cs">
+    <Compile Include="Tree\CreateDirectoryDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateDirectoryDialog.Designer.cs">
+    <Compile Include="Tree\CreateDirectoryDialog.Designer.cs">
       <DependentUpon>CreateDirectoryDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="DirectoryManager.cs" />
     <Compile Include="FileInformation.cs" />
-    <Compile Include="FindNodeDialog.cs">
+    <Compile Include="Tree\FindNodeDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FindNodeDialog.Designer.cs">
+    <Compile Include="Tree\FindNodeDialog.Designer.cs">
       <DependentUpon>FindNodeDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="FolderPrivilageDialog.cs">
@@ -68,23 +68,22 @@
     <Compile Include="FolderPrivilageDialog.Designer.cs">
       <DependentUpon>FolderPrivilageDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemClass.cs" />
-    <Compile Include="JoinDialog.cs">
+    <Compile Include="Dialog\JoinDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="JoinDialog.Designer.cs">
+    <Compile Include="Dialog\JoinDialog.Designer.cs">
       <DependentUpon>JoinDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyListView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MyTreeView.cs">
+    <Compile Include="Tree\MyTreeView.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="NoticeDialog.cs">
@@ -96,33 +95,33 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistryManager.cs" />
-    <Compile Include="ShareDialog.cs">
+    <Compile Include="Dialog\ShareDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShareDialog.Designer.cs">
+    <Compile Include="Dialog\ShareDialog.Designer.cs">
       <DependentUpon>ShareDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="ShareFolder.cs" />
-    <Compile Include="TransferManager.cs" />
-    <Compile Include="TransferProgressDialog.cs">
+    <Compile Include="Socket\TransferManager.cs" />
+    <Compile Include="Dialog\TransferProgressDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TransferProgressDialog.Designer.cs">
+    <Compile Include="Dialog\TransferProgressDialog.Designer.cs">
       <DependentUpon>TransferProgressDialog.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CreateDirectoryDialog.resx">
+    <EmbeddedResource Include="Tree\CreateDirectoryDialog.resx">
       <DependentUpon>CreateDirectoryDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FindNodeDialog.resx">
+    <EmbeddedResource Include="Tree\FindNodeDialog.resx">
       <DependentUpon>FindNodeDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FolderPrivilageDialog.resx">
       <DependentUpon>FolderPrivilageDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JoinDialog.resx">
+    <EmbeddedResource Include="Dialog\JoinDialog.resx">
       <DependentUpon>JoinDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoticeDialog.resx">
@@ -138,10 +137,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ShareDialog.resx">
+    <EmbeddedResource Include="Dialog\ShareDialog.resx">
       <DependentUpon>ShareDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TransferProgressDialog.resx">
+    <EmbeddedResource Include="Dialog\TransferProgressDialog.resx">
       <DependentUpon>TransferProgressDialog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

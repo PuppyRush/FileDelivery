@@ -54,7 +54,7 @@ namespace FileDelivery2_Client
         public const int WINDOW_MARGIN = 8;
         public static Point CLIENT_TREE_LOCATION = new Point(8, 52);
 
-        public const string PROGRAM_NAME = "FileDelivery2";
+        public const string PROGRAM_NAME = "FileDelivery";
 
         public const int ID_MAXLEN = 10;
         public const int PW_MAXLEN = 10;
