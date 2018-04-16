@@ -267,8 +267,6 @@ namespace FileDelivery2_Client
         private void btnConnect_Click(object sender, EventArgs e)
         {
 
-   
-
             if (btnConnect.Text.Equals(CONST.BTN_NAME_DISCONNECT))
             {
                 client.DoLogout();
@@ -304,7 +302,7 @@ namespace FileDelivery2_Client
             //접속시도
             else
             {
-                client.LoadClient(txtID.Text, txtPassword.Text, txtServerip.Text, txtServerport.Text);               
+                client.ConnectToServer(txtID.Text, txtPassword.Text, txtServerip.Text, txtServerport.Text);               
             }
 
 

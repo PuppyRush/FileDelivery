@@ -49,13 +49,12 @@ namespace FileDelivery2_Client
             serverNode.Text = clientName;
         }
         
-        public void LoadClient(string id, string pw, string ip, string port){
-
+        public void ConnectToServer(string id, string pw, string ip, string port)
+        {
             if (clientSocket == null || clientSocket.Connected == false)
             {
                 try
                 {
-
                     clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                     IPEndPoint ie = new IPEndPoint(IPAddress.Parse(ip), int.Parse(port));
                     clientSocket.Connect(ie);
